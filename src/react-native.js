@@ -185,4 +185,10 @@ crypto.subtle.digest = function digest() {
   return originalDigest.apply(this, arguments);
 }
 
+const originalSign = crypto.subtle.sign;
+crypto.subtle.sign = function sign() {
+  arguments[2] = ensureUint8Array(arguments[2]);
+  return originalSign.apply(this, arguments);
+}
+
 module.exports = crypto
