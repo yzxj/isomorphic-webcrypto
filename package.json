@@ -3,12 +3,7 @@
   "version": "1.5.0",
   "description": "webcrypto library for Node, React Native and IE11+",
   "main": "./src/main.js",
-  "module": "./src/index.mjs",
-  "browser": {
-    "./src/main.js": "./src/main.browser.js",
-    "./src/index.mjs": "./src/browser.mjs"
-  },
-  "types": "index.d.ts",
+  "browser":  "./src/main.browser.js",
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build",
@@ -16,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevlened/isomorphic-webcrypto.git"
+    "url": "git+https://github.com/yzxj/isomorphic-webcrypto.git"
   },
   "files": [
     "src",
@@ -28,10 +23,6 @@
     "small"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kevlened/isomorphic-webcrypto/issues"
-  },
-  "homepage": "https://github.com/kevlened/isomorphic-webcrypto#readme",
   "dependencies": {
     "@trust/webcrypto": "^0.8.4",
     "b64u-lite": "^1.0.1",
