@@ -1,3 +1,5 @@
+Forked to adjust compatibility for my own projects' environments.
+
 # isomorphic-webcrypto [![NPM](https://img.shields.io/npm/v/isomorphic-webcrypto.svg)](https://npmjs.com/package/isomorphic-webcrypto)
 webcrypto library for Node, React Native and IE11+
 
